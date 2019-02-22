@@ -56,7 +56,7 @@ public class LogTailer implements Runnable {
     }
 
     /**
-     * Runnable method fo log tailer
+     * Runnable method for log tailer
      */
     public void run() {
         /*start of thread*/
