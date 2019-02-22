@@ -10,17 +10,17 @@ public interface LogTailerListener {
     void fileNotFound();
 
     /**
-     * Method handles with response from tailer
+     * This method handles the response from tailer
      */
     void update(String line);
 
     /**
-     * Method handles any exception, except IOException (file not found)
+     * This method handles any exception, except IOException (file not found)
      */
     void handleException(Exception exception);
 
     /**
-     * Method is called if tailed file was deleted and tailer is termination
+     * This method is called if tailed file was deleted and tailer is termination
      */
     void handleRemovedFile();
 }
